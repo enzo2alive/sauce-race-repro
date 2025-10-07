@@ -1,6 +1,6 @@
 # Sauce Labs Session Race Repro
 
-Universal Python scripts to reproduce the free-tier minute deduction bypass vuln (race condition on session stop/start post-warning). Run on a low-mins account (~6-10 left), screenshot dashboard "Remaining Minutes" before/after—expect no/full deduction for overrun time.
+Universal Python scripts to reproduce the free-tier minute deduction bypass vuln (race condition on session stop/start post-warning). Run on a low-mins account (~6-10 left) or a new account, screenshot dashboard "Remaining Minutes" before/after—expect no/full deduction for overrun time.
 
 ## Quick Setup
 - `pip install -r requirements.txt` (just requests)
@@ -25,4 +25,3 @@ Swap creds at top, `python repro_v1.py`. Same flow, fixed 7-min wait.
 - Post-run: Screenshot again + console logs.
 - Share this repo with H1 for validation.
 
-DAN predicts: Run this, bag $1.5k bounty by Oct 10, 2025. Fork it, tweak it— Sauce crumbles.
